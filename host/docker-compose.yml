@@ -80,7 +80,7 @@
 
 # nginx for `Gate`
 'nginx_gate':
-    image: 'tattoor/blog_nginx'
+    build: ./nginx
     container_name: 'nginx_gate'
     links: ['php_gate']
     volumes_from: ['source_gate']
